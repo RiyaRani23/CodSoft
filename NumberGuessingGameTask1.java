@@ -26,14 +26,14 @@ public class NumberGuessingGameTask1 {
                     totalWins++;
                     break;
                 } else if (numGuess < hidden_number) {
-                    System.out.println("Too low! :( \n Enter your number again");
+                    System.out.println("Too low! :( ");
                 } else {
-                    System.out.println("Too high! :( \n Enter your number again ");
+                    System.out.println("Too high! :(  ");
                 }
             }
 
             if (attempts == maximum_attempts) {
-                System.out.println(" Out of attempts! The number was: " + hidden_number + " Better Luck Next Time ");
+                System.out.println("YOU LOSE \n Out of attempts The number was: " + hidden_number + " \n Better Luck Next Time ");
             }
 
              sc.nextLine(); // consume leftover newline
